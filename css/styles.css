@@ -59,6 +59,9 @@ img {
 .link {
   text-decoration: none;
 }
+.portfolio-link-cont{
+  text-decoration: none;
+}
 /* Кнопки*/
 .btn,
 .filter-btn {
@@ -71,12 +74,11 @@ body {
   background-color: var(--main-color);
 }
 /* Hover*/
-.portfolio-link-cont:hover,
-.portfolio-link-cont:focus {
-  
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+.portfolio-link-cont:hover .portfolio-shadow-cont,
+.portfolio-link-cont:focus .portfolio-shadow-cont {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} 
 
 .clients-link:hover .icon-clients,
 .clients-link:focus .icon-clients {
@@ -89,6 +91,7 @@ body {
 
 .main-btn:active {
   background-color: #188ce8;
+  
 }
 .link:hover,
 .link:focus {
@@ -382,7 +385,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .page-footer {
   background-color: var(--one-font-color);
@@ -394,6 +397,7 @@ body {
   margin-bottom: 9px;
 }
 .page-footer-logo {
+  font-style: normal;
   display: inline-block;
   margin-bottom: 20px;
   font-family: "Raleway";
