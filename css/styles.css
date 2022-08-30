@@ -352,6 +352,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius:4px;
 }
 .clients-header {
   font-size: 36px;
@@ -364,7 +365,7 @@ body {
   fill: var(--primary-icon-color);
 }
 .clients-icon-cont {
-  width: 170px;
+  width: 170px; 
 }
 
 /* Футер*/
