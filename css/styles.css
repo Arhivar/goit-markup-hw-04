@@ -74,8 +74,8 @@ body {
   background-color: var(--main-color);
 }
 /* Hover*/
-.portfolio-link-cont:hover .portfolio-shadow-cont,
-.portfolio-link-cont:focus .portfolio-shadow-cont {
+.portfolio-link-cont:hover ,
+.portfolio-link-cont:focus{
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 } 
@@ -99,7 +99,6 @@ body {
 }
 .team-cont-icon:hover,
 .team-cont-icon:focus {
-  fill: var(--main-color);
   background-color: var(--hover-color);
 }
 .team-cont-icon:hover .team-icon,
@@ -117,7 +116,6 @@ body {
 .filter-btn:hover {
   background-color: var(--hover-color);
   color: var(--main-color);
-  cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -151,7 +149,7 @@ body {
   align-items: center;
 }
 .contacts-icon {
-  fill: var(--second-icon-color);
+  fill: currentColor;
   margin-right: 10px;
 }
 .page-contacts-list-li {
@@ -237,8 +235,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
 }
@@ -345,6 +342,9 @@ body {
   display: flex;
   column-gap: 30px;
 }
+.icon-clients-list-li{
+  width: 170px;
+}
 .clients-link {
   width: 100%;
   height: 92px;
@@ -356,7 +356,7 @@ body {
 }
 .clients-header {
   font-size: 36px;
-  line-height: 1.16px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
@@ -364,10 +364,6 @@ body {
 .icon-clients {
   fill: var(--primary-icon-color);
 }
-.clients-icon-cont {
-  width: 170px; 
-}
-
 /* Футер*/
 .page-footer-container {
   display: flex;
@@ -426,7 +422,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--foot-cont-color);
 }
-.foot-icon-header {
+.foot-icon-page{
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -477,7 +474,9 @@ body {
   border: 1px solid var(--font-image-color);
   border-top: none;
 }
-
+.portfolio-link-cont{
+  display: block;
+}
 .portfolio-header {
   font-size: 18px;
   line-height: 2;
